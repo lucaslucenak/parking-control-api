@@ -1,5 +1,8 @@
 package com.api.parkingcontrol.models;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -7,6 +10,8 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "tb_parking_spot")
+@Getter
+@Setter
 public class ParkingSpotModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
